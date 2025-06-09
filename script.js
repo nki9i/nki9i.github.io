@@ -184,25 +184,6 @@ const statsObserver = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.5 });
 
-function animateNumber(element, start, end, duration, decimals = 0, hasPlus = false) {
-    const startTime = performance.now();
-    
-    function update(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        
-        const current = start + (end - start) * easeOutQuart(progress);
-        const displayValue = decimals > 0 ? current.toFixed(decimals) : Math.floor(current);
-        
-        element.textContent = displayValue + (hasPlus ? '+' : '');
-        
-        if (progress < 1) {
-            requestAnimationFrame(update);
-        }
-    }
-    
-    requestAnimationFrame(update);
-}
 
 function easeOutQuart(t) {
     return 1 - Math.pow(1 - t, 4);
