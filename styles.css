@@ -17,6 +17,7 @@
     
     /* Highlight color for important text */
     --highlight-blue: #B9D9EB;
+    --highlight-brown: #e5ae5b;
     
     /* Typography */
     --font-heading: 'Playfair Display', serif;
@@ -135,7 +136,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: #F2E8C8;
+    background: var(--white);
     position: relative;
     overflow: hidden;
 }
@@ -147,7 +148,7 @@ body {
     right: 0;
     width: 50%;
     height: 100%;
-    background: #F2E8C8;
+    background: var(--white);
     z-index: 1;
 }
 
@@ -158,7 +159,7 @@ body {
     left: 0;
     width: 100%;
     height: 200px;
-    background: #F2E8C8;    
+    background: var(--white);    
     z-index: 1;
 }
 
@@ -224,7 +225,7 @@ body {
 }
 
 .hero-title .highlight {
-    background: var(--highlight-blue);
+    background: var(--highlight-brown);
     padding: 2px 6px;
     border-radius: 4px;
     font-weight: 600;
