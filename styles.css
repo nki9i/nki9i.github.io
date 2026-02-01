@@ -709,6 +709,51 @@ section {
     color: var(--primary-dark);
 }
 
+/* Volunteering Section */
+.volunteering {
+    background: var(--white);
+}
+
+.volunteering-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.volunteering-item {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.volunteering-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.volunteering-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+}
+
+.volunteering-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+
+.volunteering-item .highlight {
+    background: var(--highlight-blue);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
 /* Contact Section */
 .contact {
     background: var(--light-gray);
